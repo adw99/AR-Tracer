@@ -22,7 +22,7 @@ router.post( '/bears', function(req,res) {
 	var bear = new Bear();
 	bear.name = req.body.name;
 
-	console.log("createing bear with name:" + req.body.name );
+	console.log("creating bear with name:" + req.body.name );
 	console.log("request body:", req.body);
 
 	bear.save( function(err) {
